@@ -4,9 +4,9 @@ Develop an online magazine where moderators could write articles of different to
 # User Stories
 
 1. As a website owner I want to:
-    - Manage access priviliges
+    - Manage access priviliges.
 2. As a Moderator I want to:
-    - Write, update and delete my own articles
+    - Write, update and delete my own articles.
 3. As a user I want to: 
     - comment on articles, and like.
     - I can search for an article.
@@ -31,8 +31,8 @@ With the use of  GitHub's kanban board, issues have been listed with labels for 
    - authentication with allauth take a place as a third step after testing the CRUD
 2. GitHub Features
    - Issues
-   The user stories have been given a Github issue, each is prioritized and is a given one of three labels (Must have , Should have, Could have).
-   ![Issues](/magazine/magazine/static/images/issues.png)
+The user stories have been given a Github issue, each is prioritized and is a given one of three labels (Must have , Should have, Could have).
+![Issues](/magazine/magazine/static/images/issues.png)
 
 # Features
 1. CRUD articles
