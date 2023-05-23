@@ -31,8 +31,8 @@ With the use of  GitHub's kanban board, issues have been listed with labels for 
    - authentication with allauth take a place as a third step after testing the CRUD
 2. GitHub Features
    - Issues
-     + The user stories have been given a Github issue, each is prioritized and is a given one of three labels (Must have , Should have, Could have).
-![Issues](/magazine/magazine/static/images/isuues.png)
+   The user stories have been given a Github issue, each is prioritized and is a given one of three labels (Must have , Should have, Could have).
+   ![Issues](/magazine/magazine/static/images/isuues.png)
 
 # Features
 1. CRUD articles
