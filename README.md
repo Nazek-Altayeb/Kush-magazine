@@ -1,18 +1,18 @@
 # Goal
-Develop an online magazine where moderators could write articles on different topics and login users could comment with feedback or questions that the moderators would reply back, also guests would have the ability to read articles.
+Develop an online magazine where moderators could write articles of different topics, and login users could add comments and like articles, where also guests would have the ability to read and search articles.
 
 # User Stories
 
-1. As a website owner I can 
+1. As a website owner I want to:
     - Manage access priviliges
-2. As a Moderator I can:
+2. As a Moderator I want to:
     - Write, update and delete my own articles
-3. As a user I can 
+3. As a user I want to: 
     - comment on articles, and like.
     - I can search for an article.
     - I can filter articles according to topics. 
     - Bookmark articles. 
-4. As a guest I can
+4. As a guest I want to:
     - Read articles.
 
 # System analysis
