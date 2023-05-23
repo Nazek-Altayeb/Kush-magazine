@@ -15,29 +15,27 @@ Develop an online magazine where moderators could write articles of different to
 4. As a guest I want to:
     - Read articles.
 
-# System analysis
-## Use case diagram
+# System analysis / Use case diagram
+![Use case duagram](/magazine/magazine/static/images/usecase-diagram.png)
 
-# System Design
-## ERD
+# System Design / ERD
+![ERD](/magazine/magazine/static/images/ERD-diagram.png)
 
 # Logic Path
 
 # Agile workflow
-## Adding essential features first
-## GitHub Features#
-
-### Issues
+1. Adding essential features first
+2. GitHub Features
+   * Issues
 
 # Features
-## CRUD articles
-## Comment on article
-## like an article
-## filter articles
-## search for article
-## Bookmark an article
-
-## Manage access piviliges
+1. CRUD articles
+2. Comment on article
+3. like an article
+4. filter articles
+5. search for article
+6. Bookmark an article
+7. Manage access piviliges
 
 # Testing
 
