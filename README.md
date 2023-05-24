@@ -1,7 +1,12 @@
 # Goal
-Develop an online magazine where moderators could write articles of different topics, and login users could add comments and like articles, where also guests would have the ability to read and search articles.
+Develop an online magazine where moderators could write articles of different topics, 
+login users could write comments and like articles, where also guests would have the ability to read and search articles.
 
-# User Stories
+# Target audience
+- Readers who interest in online magazines.
+
+# User Experience
+## User Stories
 
 1. As a website owner I want to:
     - Manage access priviliges.
@@ -14,14 +19,20 @@ Develop an online magazine where moderators could write articles of different to
     - Bookmark articles. 
 4. As a guest I want to:
     - Read articles.
+## Design
+## Colors
+## Typography
+
 
 # System analysis / Use case diagram
 ![Use case duagram](/magazine/magazine/static/images/usecase-diagram.png)
 
-# System Design / ERD
+# Database Design / ERD
 ![ERD](/magazine/magazine/static/images/ERD-diagram.png)
 
-# Logic Path
+# UX Plane
+## Scope
+## Logic Path
 
 # Agile workflow
 With the use of  GitHub's kanban board, issues have been listed with labels for each, prioritising them in a manner that meets the project objective.
@@ -51,6 +62,7 @@ With the use of  GitHub's kanban board, issues have been listed with labels for 
 # Deployment
 
 # Technologies
++ [Bootstrap 5](https://getbootstrap.com/) - Used inorder to make the website responsive.
 
 # Deployment 
 
