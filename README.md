@@ -3,7 +3,7 @@ Develop an online magazine where moderators could write articles of different to
 login users could write comments and like articles, where also guests would have the ability to read and search articles.
 
 # Target audience
-- Readers who interest in online magazines.
+- Readers who are interested in online magazines.
 
 # User Experience
 ## User Stories
@@ -43,8 +43,14 @@ With the use of  GitHub's kanban board, issues have been listed with labels for 
 2. GitHub Features / Issues
    - The user stories have been given a Github issue, each is prioritized and is a given one of three labels (Must have , Should have, Could have).
 ![Issues](/magazine/magazine/static/images/issues.png).
+# Implementation Plan
+   1. Data layer
+      1. Create the following database tables  as models in models.py (Article, User, Comment, Topic, Like)
+      2. Migrate to database 
+   2. Back-end 
+   3. Presentation layer 
 
-# Features
+# Existing Features
 1. CRUD articles
 2. Comment on article
 3. like an article
