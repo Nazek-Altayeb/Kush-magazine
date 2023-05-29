@@ -10,33 +10,10 @@
 
 <body>
     <h1>Add a new articles</h1>
-
-    <form method="POST" action="{% url 'add' %}">
+    <form action="{% url 'add' %}" method="POST">
         {% csrf_token %}
-        <div>
-            <p>
-                <label for="id_title">Title:</label>
-                <input type="text" id="id_title" name="article_title" />
-            </p>
-        </div>
-        <div>
-            <p>
-                <label for="id_topic"> Topic</label>
-                <input type="text" id="id_topic" name="article_topic" />
-            </p>
-        </div>
-        <div>
-            <p>
-                <label for="id_body"> write your article here</label>
-                <input type="text" id="id_body" name="article_body" />
-            </p>
-        </div>
-        <div>
-            <p>
-                <button type="submit">Add artcile</button>
-            </p>
-        </div>
-       
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
     </form>
 </body>
 
