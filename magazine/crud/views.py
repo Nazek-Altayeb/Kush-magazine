@@ -56,3 +56,9 @@ def edit_article(request, article_id):
         'form': form
     }
     return render(request, 'crud/edit_article.html', context)
+
+
+def delete_article(request, article_id):
+    article = get_object_or_404(Article, id=article_id)
+    article.delete()
+    return redirect('get_article')
