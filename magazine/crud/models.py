@@ -6,7 +6,7 @@ from django.db import models
 class Article(models.Model):
     title = models.CharField(max_length=100, null=False, blank=False)
     body = models.CharField(max_length=1500, null=False, blank=False)
-    user = models.ForeignKey("User", on_delete=models.CASCADE)
+   # user = models.ForeignKey("User", on_delete=models.CASCADE)
     topic = models.ForeignKey("Topic", on_delete=models.CASCADE)
 
     def __str__(self):
@@ -15,7 +15,7 @@ class Article(models.Model):
 
 class Comment(models.Model):
     body = models.CharField(max_length=250, null=False, blank=False)
-    user = models.ForeignKey("User", on_delete=models.CASCADE)
+  #  user = models.ForeignKey("User", on_delete=models.CASCADE)
     article = models.ForeignKey("Article", on_delete=models.CASCADE)
 
 
@@ -34,5 +34,5 @@ class Topic(models.Model):
 
 
 class Like(models.Model):
-    user = models.ForeignKey("User", on_delete=models.CASCADE)
+  #   user = models.ForeignKey("User", on_delete=models.CASCADE)
     article = models.ForeignKey("Article", on_delete=models.CASCADE)

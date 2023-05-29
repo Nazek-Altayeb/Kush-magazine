@@ -1,11 +1,13 @@
-from django.shortcuts import render
-from .models import Article
+from django.shortcuts import render, redirect
+from .models import Article, Topic
+# from .forms import DropDown
 
 # Create your views here.
 
 
 def get_article(request):
     articles = Article.objects.all()
+    topics = Topic.objects.all()
     context = {
         'articles': articles
     }
@@ -13,4 +15,27 @@ def get_article(request):
 
 
 def add_article(request):
+    if request.method == "POST":
+        article_title = request.POST.get('article_title')
+        article_body = request.POST.get('article_body')
+
+        Article.objects.create(title=article_title, body=article_body)
+        return redirect('get_article')
     return render(request, 'crud/add_article.html')
+
+
+def get_topic(request):
+    topics = Topic.objects.all()
+    context = {
+        'topics': topics
+    }
+    return render(request, 'topics/get_topic.html', context)
+
+
+def add_topic(request):
+    if request.method == "POST":
+        topic_name = request.POST.get('topic_name')
+
+        Topic.objects.create(name=topic_name)
+        return redirect('get_topic')
+    return render(request, 'topics/add_topic.html')
