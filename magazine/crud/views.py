@@ -19,7 +19,7 @@ def get_article(request):
     context = {
         'articles': articles
     }
-    return render(request, 'crud/add_article.html', context)
+    return render(request, 'crud/get_article.html', context)
 
 
 def add_article(request):
@@ -28,9 +28,11 @@ def add_article(request):
         if form.is_valid():
             form.save()
             return redirect('get_article')
-        form = ArticleForm()
-        return redirect('get_article')
-    return render(request, 'crud/add_article.html')
+    form = ArticleForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'crud/add_article.html', context)
 
 
 def get_topic(request):
