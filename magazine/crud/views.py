@@ -14,13 +14,21 @@ from .forms import ArticleForm
     return render(request, 'crud/get_article.html', context)"""
 
 
+def get_article(request):
+    articles = Article.objects.all()
+    context = {
+        'articles': articles
+    }
+    return render(request, 'crud/add_article.html', context)
+
+
 def add_article(request):
     if request.method == "POST":
-        article_title = request.POST.get('article_title')
-        article_body = request.POST.get('article_body')
-        article_topic = request.POST.get('article_topic')
-        Article.objects.create(title=article_title,
-                               body=article_body, topic=article_topic)
+        form = ArticleForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('get_article')
+        form = ArticleForm()
         return redirect('get_article')
     return render(request, 'crud/add_article.html')
 
@@ -40,15 +48,3 @@ def add_topic(request):
         Topic.objects.create(name=topic_name)
         return redirect('get_topic')
     return render(request, 'topics/add_topic.html')
-
-
-def get_article(request):
-    form = ArticleForm()
-    # topics = Topic.objects.all()
-    if request.method == 'POST':
-        form = ArticleForm(request.POST)
-       # form = ArticleForm(request.POST, instance=Article.objects.first())
-        if form.is_valid():
-            form.save()
-            return redirect('get_article')
-    return render(request, 'crud/add_article.html', {'form': form})
