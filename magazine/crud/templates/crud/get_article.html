@@ -16,6 +16,10 @@
             <td>{{ article.title }}</td>
             <td>{{ article.body }}</td>
             <td>{{ article.topic }}</td>
+            <td>
+                <a href="/edit/{{ article.id }}">Edit</a>
+                <!--<button>Edit</button>-->
+            </td>
         </tr>
         {% endfor %}
     </table>

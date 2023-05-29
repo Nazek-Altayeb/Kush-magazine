@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from crud.views import add_article, get_article, get_topic, add_topic
+from crud.views import add_article, get_article, get_topic, add_topic, edit_article
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,5 +23,6 @@ urlpatterns = [
     path('', get_article, name='get_article'),
     path('add_topic/', add_topic, name='add_topic'),
     path('get_topic/', get_topic, name='get_topic'),
+    path('edit/<article_id>', edit_article, name='edit_article')
 
 ]
