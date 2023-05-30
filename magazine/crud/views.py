@@ -11,7 +11,7 @@ def get_article(request):
     context = {
         'articles': articles
     }
-    return render(request, 'crud/get_article.html', context)
+    return render(request, 'articles/get_article.html', context)
 
 
 def add_article(request):
@@ -24,7 +24,7 @@ def add_article(request):
     context = {
         'form': form
     }
-    return render(request, 'crud/add_article.html', context)
+    return render(request, 'articles/add_article.html', context)
 
 
 def get_topic(request):
@@ -55,7 +55,7 @@ def edit_article(request, article_id):
     context = {
         'form': form
     }
-    return render(request, 'crud/edit_article.html', context)
+    return render(request, 'articles/edit_article.html', context)
 
 
 def delete_article(request, article_id):
